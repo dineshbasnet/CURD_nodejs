@@ -3,13 +3,16 @@
 const userModel = (sequelize,DataTypes)=>{
     const User = sequelize.define("user",{
         username: {
-            type:DataTypes.STRING
+            type:DataTypes.STRING,
+            alloNull:false
         },
         password: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull:false
         },
         email: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            alloNull:false
         }
     })
     return User

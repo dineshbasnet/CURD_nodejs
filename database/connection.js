@@ -23,7 +23,7 @@ db.sequelize = sequelize
 
 db.books = require("./models/book.model")(sequelize,DataTypes)
 db.users = require("./models/user.model")(sequelize,DataTypes)
-db.products = require('./models/product.model')(sequelize,DataTypes)
+
 // Alternative const bookModel = require("./models/book.model").()
 
 sequelize.sync({alter:false}).then(()=>{

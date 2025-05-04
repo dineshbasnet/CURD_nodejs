@@ -1,18 +1,10 @@
 
-
 const productModel = (sequelize,DataTypes)=>{
-    const Product = sequelize.define("product",{
-        prductName: {
-            type: DataTypes.STRING
-        },
-        productPrice: {
-            type: DataTypes.INTEGER
-        },
-        productImage: {
-            type: DataTypes.STRING
+    const Book = sequelize.define("book",{
+        bookName:{
+            type:DataTypes.STRING
         }
-    })
-    return Product
-}
 
-module.exports = productModel
+    })
+
+}
